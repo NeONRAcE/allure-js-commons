@@ -2,7 +2,7 @@ import { AllureRuntime } from "./AllureRuntime";
 import { ExecutableItemWrapper } from "./ExecutableItemWrapper";
 export declare class AllureTest extends ExecutableItemWrapper {
     private readonly runtime;
-    private readonly testResult;
+    public testResult;
     constructor(runtime: AllureRuntime, start?: number);
     endTest(stop?: number): void;
     get uuid(): string;
